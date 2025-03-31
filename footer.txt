@@ -1,0 +1,41 @@
+<footer style="background-color: #269; color: white; padding: 20px; text-align: center;">
+<div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-around;">
+<div style="flex-basis: 20%; margin: 10px;">
+<h4 style="margin-bottom: 10px;">We aer near you (find a store)</h4>
+<ul style="list-style: none; padding: 0;">
+<li style="margin-bottom: 5px;"><a href="#" style="color: white;">Become a Member</a></li>
+<li style="margin-bottom: 5px;"><a href="#" style="color: white;">Sign up for email</a></li>
+<li style="margin-bottom: 5px;"><a href="#" style="color: white;">Send us Feedback</a></li>
+</ul>
+</div>
+<div style="flex-basis: 20%; margin: 10px;">
+<h4 style="margin-bottom: 10px;">Connect with a hooman</h4>
+<ul style="list-style: none; padding: 0;">
+<li style="margin-bottom: 5px;"><a href="#" style="color: white;">Order Status</a></li>
+<li style="margin-bottom: 5px;"><a href="#" style="color: white;">Shipping and Delivery</a></li>
+<li style="margin-bottom: 5px;"><a href="#" style="color: white;">Returns</a></li>
+<li style="margin-bottom: 5px;"><a href="#" style="color: white;">Payment Options</a></li>
+<li style="margin-bottom: 5px;"><a href="#" style="color: white;">Contact Us On Inquiries</a></li>
+</ul>
+</div>
+<div style="flex-basis: 20%; margin: 10px;">
+<h4 style="margin-bottom: 10px;">Aboot us</h4>
+<ul style="list-style: none; padding: 0;">
+<li style="margin-bottom: 5px;"><a href="#" style="color: white;">News</a></li>
+<li style="margin-bottom: 5px;"><a href="#" style="color: white;">Careers</a></li>
+<li style="margin-bottom: 5px;"><a href="#" style="color: white;">Investors</a></li>
+<li style="margin-bottom: 5px;"><a href="#" style="color: white;">Sustainability</a></li>
+</ul>
+</div>
+<div style="flex-basis: 20%; margin: 10px;">
+<h4 style="margin-bottom: 10px;">Find us on social media</h4>
+<div style="display: flex; justify-content: space-between; width: 100px;">
+<a href="#" style="color: white;"><i class="fab fa-facebook-f"></i></a>
+<a href="#" style="color: white;"><i class="fab fa-twitter"></i></a>
+<a href="#" style="color: white;"><i class="fab fa-instagram"></i></a>
+<a href="#" style="color: white;"><i class="fab fa-linkedin-in"></i></a>
+</div>
+</div>
+</div>
+<p style="margin-top: 20px; text-align: center;">&copy; 2023 Bunga Shoes</p>
+</footer>
