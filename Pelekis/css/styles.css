@@ -6,7 +6,6 @@
 
 body {
     font-family: Arial, sans-serif;
-    height: 300vh;
 }
 
 .top-bar {
@@ -152,7 +151,7 @@ body {
 .product-container {
     height: 200vh;
     width: 75%;
-    margin: 35px auto;
+    margin: 35px auto 240px auto;
     display: flex;
     justify-content: space-between;
 }
