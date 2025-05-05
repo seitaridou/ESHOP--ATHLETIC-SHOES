@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css">
+    <title>Nike Vomero 18</title>
+</head>
+<body>
+    
+    <header>
+        <div class="top-bar">
+            <img src="images/air-jordan-icon.png">
+            <ul>
+                <li><a href="#">Βρες ένα κατάστημα</a></li>
+                <li><a href="#">Βοήθεια</a></li>
+                <li><a href="#">Έλα μαζί μας</a></li>
+                <li><a href="#">Σύνδεση</a></li>
+            </ul>
+        </div>
+    
+        <div class="nav-bar">
+            <img src="images/nike-logo.jpg" alt="Nike Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#">Νέα και προτεινόμενα</a></li>
+                    <li><a href="#">Ανδρικά</a></li>
+                    <li><a href="#">Γυναικεία</a></li>
+                    <li><a href="#">Παιδικά</a></li>
+                    <li><a href="#">Jordan</a></li>
+                </ul>
+            </nav>
+            <div class="user-tools">
+                <div class="search">
+                    <i class="far fa-search search-icon"></i>
+                    <input type="text" placeholder="Αναζήτηση..."></input>
+                </div>
+                <a href="#" class="generic-icon"><i class="far fa-heart"></i></a>
+                <a href="#" class="generic-icon"><i class="far fa-shopping-bag"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="product-container">
+        <div class="image-container">
+            <div class="side-images"><!-- images go here with js --></div>
+            
+            <div class="main-image">
+                <img src="images/color1/image0.jpg">
+            </div>
+        </div>
+
+        <div class="product-info">
+            <h3>Nike Vomero 18</h3>
+            <p class="category"> Γυναικεία Παπούτσια για τρέξιμο σε δρόμο</p>
+            <p class="price">149,99 €</p>
+            <div class="color-options">
+                <img src="images/color0/image0.jpg" onclick="loadImages(0)">
+                <img src="images/color1/image0.jpg" onclick="loadImages(1)">
+                <img src="images/color2/image0.jpg" onclick="loadImages(2)">
+            </div>
+
+            <div class="available-sizes">
+                <p onclick="currentSize(0)">EU 35.5</p>
+                <p onclick="currentSize(1)">EU 36</p>
+                <p onclick="currentSize(2)">EU 36.5</p>
+                <p onclick="currentSize(3)">EU 37</p>
+                <p onclick="currentSize(4)">EU 37.5</p>
+                <p onclick="currentSize(5)">EU 38</p>
+                <p onclick="currentSize(6)">EU 38.5</p>
+                <p onclick="currentSize(7)">EU 39</p>
+                <p onclick="currentSize(8)">EU 39.5</p>
+                <p onclick="currentSize(9)">EU 40</p>
+                <p onclick="currentSize(10)">EU 40.5</p>
+                <p onclick="currentSize(11)">EU 41</p>
+                <p onclick="currentSize(12)">EU 41.5</p>
+                <p onclick="currentSize(13)">EU 42</p>
+                <p onclick="currentSize(14)">EU 42.5</p>
+                <p onclick="currentSize(15)">EU 43</p>
+                <p onclick="currentSize(16)">EU 43.5</p>
+                <p onclick="currentSize(17)">EU 44</p>
+                <p onclick="currentSize(18)">EU 44.5</p>
+            </div>
+
+            <div class="user-actions">
+                <button class="buy-btn">Αγορά</button>
+                <button class="favorite-btn">Αγαπημένο</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-top">
+        <div class="footer-links">
+            <a href="#">Πόροι</a>
+            <a href="#">Δωροκάρτες</a>
+            <a href="#">Βρες ένα κατάστημα</a>
+            <a href="#">Nike Journal</a>
+            <a href="#">Γίνε μέλος</a>
+            <a href="#">Σχόλια</a>
+            <a href="#">Κωδικοί προώθησης</a>
+        </div>
+        <div class="footer-links">
+            <a href="#">Ζήτησε βοήθεια</a>
+            <a href="#">Κατάσταση παραγγελίας</a>
+            <a href="#">Αποστολή και παράδοση</a>
+            <a href="#">Επιστροφές</a>
+            <a href="#">Επιλογές πληρωμής</a>
+            <a href="#">Επικοινωνία</a>
+            <a href="#">Αξιολογήσεις</a>
+        </div>
+        <div class="footer-links">
+            <a href="#">Εταιρεία</a>
+            <a href="#">Σχετικά με τη Nike</a>
+            <a href="#">Νέα</a>
+            <a href="#">Ευκαιρίες απασχόλησης</a>
+            <a href="#">Επενδυτές</a>
+            <a href="#">Βιωσιμότητα</a>
+            <a href="#">Σκοπός</a>
+        </div>
+
+        <div class="language">
+            <i class="far fa-globe"></i>
+            <p>Ελλάδα</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2025 Nike, Inc. Με την επιφύλαξη παντός δικαιώματος</p>
+        <div class="dropdown">
+            <p>Οδηγοί</p>
+            <div class="dropdown-content">
+                <a href="#">Nike Air</a>
+                <a href="#">Nike Air Max</a>
+                <a href="#">Nike FlyEase</a>
+                <a href="#">Nike Pegasus</a>
+                <a href="#">Nike React</a>
+                <a href="#">Nike Vaporfly</a>
+            </div>
+        </div>
+        <a href="#">Όροι χρήσης</a>
+        <a href="#">Όροι πώλησης</a>
+        <a href="#">Στοιχεία εταιρείας</a>
+        <a href="#">Πολιτική απορρήτου και cookie</a>
+        <a href="#">Ρυθμίσεις απορρήτου και cookie</a>
+    </div>
+
+    <script>
+        let side_img_container = document.querySelector(".side-images");
+        let main_image = document.querySelector(".main-image");
+        let color_options = document.querySelector(".color-options").getElementsByTagName("img");
+        const images = [];
+        for(let i = 0; i < 3; i++) {
+            const colorImages = [];
+            for(let j = 0; j < 8; j++) {
+                colorImages.push(`images/color${i}/image${j}.jpg`);
+            }
+            images.push(colorImages);
+        }
+
+        // At the start, set the main slide to the first image
+        let slideIndex = 0;
+        let color = 0;
+        loadImages(color);
+
+        function loadImages(n) {
+            while(side_img_container.firstChild) {
+                side_img_container.removeChild(side_img_container.lastChild);
+            }
+
+            images[n].forEach((image, idx) => {
+                // Create all imgs 1 by 1
+                const img = document.createElement("img");
+                img.src = image;
+                img.setAttribute("onmouseover", "currentSlide(" + idx++ + ")");
+                img.classList.add("slide");
+
+                // Add the img
+                side_img_container.appendChild(img);
+            });
+
+            for(let i = 0; i < color_options.length; i++) {
+                color_options[i].classList.remove("selected-color");
+            }
+            color_options[n].classList.add("selected-color");
+
+            // Change the main image
+            currentSlide(slideIndex);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let side_imgs = side_img_container.getElementsByTagName("img");
+
+            // Hide all the main images that are not active and reset the brightness of the side img
+            for (i = 0; i < side_imgs.length; i++) {
+                side_imgs[i].classList.remove("selected-slide");
+            }
+
+            // Update the main image and lower the brightnes of the selected side img
+            main_image.firstElementChild.setAttribute("src", side_imgs[slideIndex].getAttribute("src"));
+            side_imgs[slideIndex].classList.add("selected-slide");
+        }
+
+        function currentSize(n) {
+            let i;
+            let size_container = document.querySelector(".available-sizes");
+            let sizes = size_container.getElementsByTagName("p");
+
+            for (i = 0; i < sizes.length; i++) {
+                sizes[i].classList.remove("selected-size");
+            }
+
+            sizes[n].classList.add("selected-size");
+        }
+    </script>
+</body>
+</html>

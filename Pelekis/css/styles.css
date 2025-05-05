@@ -1,0 +1,387 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 300vh;
+}
+
+.top-bar {
+    background: #f7f4f4f1;
+}
+
+.top-bar img {
+    position: absolute;
+    left: 50px;
+    top: 8px;
+    width: 20px;
+}
+
+.top-bar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top-bar ul li {
+    position: relative;
+    /* top and bottom margin = 10px, right is 15px */
+    /* 30px of space is split amongst margin and padding so that the line between the links appears in the middle */
+    margin-right: 15px;
+    padding: 10px 0;
+    padding-right: 15px;
+}
+
+.top-bar ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.top-bar ul li:not(:last-child)::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    color: black;
+}
+
+.top-bar ul li a:hover {
+    color: grey;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.nav-bar ul li {
+    list-style-type: none;
+
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.nav-bar ul li a:hover {
+    border-bottom: 2px solid black;
+}
+
+.logo {
+    width: 83px;
+    margin-left: 35px;
+    margin-right: 170px;
+}
+
+.user-tools {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 350px;
+}
+
+.search {
+    background-color: #f5f0f0f1;
+    border: 1px solid #f5f0f0f1;
+    border-radius: 30px;
+    height: 35px;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.search:hover {
+    background-color: #ccc8c8f1;
+    cursor: text;
+}
+
+.search input {
+    color: #847e7ef1;
+    font-size: 17px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.search-icon {
+    background-color: #f7f4f4f1;
+    border: 0;
+    border-radius: 30px;
+    height: 100%;
+    padding: 10px;
+    font-size: 17px;
+}
+
+.search-icon:hover {
+    background-color: #9d9a9af1;
+}
+
+.generic-icon {
+    background-color: white;
+    color: black;
+    border: 0;
+    border-radius: 30px;
+    height: 35px;
+    width: 35px;
+    font-size: 17px;
+    text-align: center;
+    line-height: 35px;
+}
+
+.generic-icon:hover {
+    background-color: #ccc8c8f1;
+    cursor: pointer;
+}
+
+.product-container {
+    height: 200vh;
+    width: 75%;
+    margin: 35px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-container {
+    height: 80vh;
+    width: 60%;
+    position: sticky;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.main-image {
+    width: 80%;
+    height: 100%;
+}
+
+.side-images {
+    width: 60px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.main-image img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.side-images .slide {
+    border-radius: 5px;
+    width: 55px;
+    height: 62px;
+}
+
+.selected-slide {
+    filter: brightness(0.8);
+}
+
+.product-info {
+    width: 40%;
+}
+
+.product-info h3 {
+    margin-top: 40px;
+}
+
+.category {
+    color: gray;
+    margin-top: 5px;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.color-options {
+    width: 100%;
+    display: flex;
+    gap: 6px;
+    margin-top: 40px;
+}
+
+.color-options img {
+    border-radius: 5px;
+    width: 70px;
+    height: 80px;
+}
+
+.color-options img:hover {
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.color-options .selected-color {
+    border: 1px solid black;
+}
+
+.available-sizes {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 50px;
+}
+
+.available-sizes p{
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 40px;
+    width: 80px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.available-sizes p:hover {
+    border: 2px solid black;
+}
+
+.available-sizes .selected-size {
+    border: 2px solid black;
+    background-color: #d6d6d6;
+}
+
+.user-actions {
+    width: 100%;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.buy-btn, .favorite-btn {
+    font-size: large;
+    border-radius: 50px;
+    border: none;
+    width: 350px;
+    height: 50px;
+}
+
+.buy-btn:hover, .favorite-btn:hover {
+    cursor: pointer;
+}
+
+.buy-btn {
+    background-color: black;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.buy-btn:hover {
+    background-color: gray;
+}
+
+.favorite-btn {
+    background-color: white;
+    border: 1px solid rgb(213, 213, 213);
+}
+
+.favorite-btn:hover {
+    border: 1px solid black;
+    background-color: rgb(248, 156, 156);
+}
+
+.footer-top {
+    width: 92%;
+    margin: 200px auto 0 auto;
+    border-top: 1px solid rgb(199, 199, 199);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.footer-top .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-top .footer-links a:first-child {
+    color: black;
+    margin-bottom: 20px;
+}
+
+.footer-top .footer-links a {
+    text-decoration: none;
+    color: gray;
+    font-size: 15px;
+}
+
+.footer-top .language {
+    color: gray;
+    display: flex;
+    gap: 5px;
+    font-size: 15px;
+}
+
+.footer {
+    width: 90%;
+    margin: 60px auto 0 auto;
+    display: flex;
+    gap: 20px;
+}
+
+.footer a, .footer p {
+    text-decoration: none;
+    color: gray;
+    font-size: 15px;
+}
+
+.footer a:hover {
+    color: black;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    bottom: 0px;
+    background-color: white;
+    width: 200px;
+    z-index: 1;
+    border: 1px solid rgb(210, 210, 210);
+    border-radius: 10px;
+}
+  
+.dropdown-content a {
+    color: gray;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
