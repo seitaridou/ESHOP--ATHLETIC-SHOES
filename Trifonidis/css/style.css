@@ -1,12 +1,3 @@
-.menu{
-    background-color: olive;
-    text-align: center;
-    height: 30px;
-}
-
-.menu a{
-    text-decoration: none;
-}
 
 .login-page {
     display: flex;
@@ -63,4 +54,86 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f8f8;
+    text-align: center;
+}
+
+.cart-container {
+    max-width: 90%;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row; /* Ensures side-by-side alignment */
+    flex-wrap: wrap; /* Adjusts for smaller screens */
+    gap: 20px;
+    justify-content: space-between; /* Spreads sections evenly */
+}
+
+/* Products Section */
+.cart-products {
+    width: 48%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background: #f0f0f0;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.product-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-item img {
+    width: 80px;
+    height: 80px;
+}
+
+/* Procedures Section (Payment, Shipping, Comments) */
+.cart-procedures {
+    width: 48%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background: #f0f0f0;
+    box-sizing: border-box;
+}
+
+/* Shipping Method */
+.shipping-method select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    background: white;
+}
+
+/* Comments Section */
+textarea {
+    width: 70%;
+    height: 60px;
+    padding: 5px;
+}
+
+/* Verify Button */
+.verify-btn {
+    background: green;
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 128, 0, 0.3);
+    transition: 0.3s;
+}
+
+.verify-btn:hover {
+    background: darkgreen;
+    box-shadow: 0px 6px 8px rgba(0, 128, 0, 0.4);
 }

@@ -7,12 +7,47 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="menu">
-        <a href="index.html">Home</a>
-        <a href="cart.html">Cart</a>
-        <a href="usersPage.html">Users Page</a>
-    </div>
+    <h2>Shopping Cart</h2>
 
-    <div class="cart">  </div>
+    <div class="cart-container">
+        <!-- Products Section -->
+        <div class="cart-products">
+            <h3>Products</h3>
+            <div class="product-item">
+            </div>
+        </div>
+        <div class="cart-procedures">    
+            <!-- Payment Method Section -->
+            <div class="payment-section">
+                <h3>Payment Method</h3>
+                <select>
+                    <option>Credit/Debit Card</option>
+                    <option>PayPal</option>
+                    <option>Bank Transfer</option>
+                </select>
+            </div>
+
+            <!-- Shipping Section -->
+            <div class="shipping-method">
+                <h3>Shipping Method</h3>
+                <select>
+                    <option>Ship to Address</option>
+                    <option>Pick Up from Store</option>
+                </select>
+            </div>
+
+            <!-- Customer Comments & Terms -->
+            <div class="customer-comments">
+                <h3>Customer Comments</h3>
+                <textarea placeholder="Leave a comment..."></textarea>
+            </div>
+            <div class="terms">
+                <p>By proceeding, you agree to the <a href="#">terms and conditions</a>.</p>
+            </div>
+
+            <!-- Verify Button -->
+            <button class="verify-btn">Verify & Proceed</button>
+        </div>
+    </div>
 </body>
 </html>
