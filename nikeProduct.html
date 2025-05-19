@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+     <header>
         <div class="top-bar">
             <ul>
                 <li><a href="#">Βρες ένα κατάστημα</a></li>
@@ -16,7 +16,7 @@
                 <li><a href="#">Σύνδεση</a></li>
             </ul>
         </div>
-    
+
         <div class="main-nav">
             <img src="nike-logo.png" alt="Nike Logo" class="logo">
             <nav>
@@ -36,34 +36,67 @@
             </div>
         </div>
     </header>
+
     <div class="product-container">
         <div class="image-gallery">
             <img src="shoe1.jpg" alt="Air Jordan 1 High OG 'Rare Air' - Εικόνα 1">
-            
         </div>
         <div class="product-info">
             <h1>Air Jordan 1 High OG "Rare Air"</h1>
             <p class="category">Ανδρικά παπούτσια</p>
             <p class="price">189,99 €</p>
-        
+
             <div class="color-options">
                 <img src="blue-shoe.jpg" alt="Μπλε Jordan" class="color-option">
                 <img src="white-shoe.jpg" alt="Λευκό Jordan" class="color-option">
             </div>
-        
+
+            <div class="size-selection">
+                <label for="size">Μέγεθος:</label>
+                <select id="size" name="size">
+                    <option value="">Επιλέξτε μέγεθος</option>
+                    <option value="40">40</option>
+                    <option value="41">41</option>
+                    <option value="42">42</option>
+                    <option value="43">43</option>
+                    <option value="44">44</option>
+                </select>
+            </div>
+
+            <div class="action-buttons">
+                <button id="addToCart">Προσθήκη στο καλάθι</button>
+                <button id="addToFavorites">❤️ Αγαπημένα</button>
+            </div>
+
             <div class="availability">
                 <p>Σύντομα κοντά σου</p>
                 <p>Διαθέσιμο από 5/4, στις 10:00 π.μ. EEST</p>
             </div>
-        
+
             <p class="description">
                 Κατέβασε την εφαρμογή Nike για να ενημερωθείς σχετικά. <br><br>
                 Απόκτησε ή συνδέσου στον δωρεάν λογαριασμό μέλους Nike για να έχεις μια ευκαιρία να αγοράσεις αυτό το προϊόν τη στιγμή της κυκλοφορίας του.
                 <a href="#">Μάθε περισσότερα</a>
             </p>
         </div>
-        
     </div>
+
+    <script>
+        document.getElementById("addToCart").addEventListener("click", function() {
+            const size = document.getElementById("size").value;
+            if (!size) {
+                alert("Παρακαλώ επίλεξε μέγεθος πριν προσθέσεις στο καλάθι.");
+            } else {
+                alert(`Το μέγεθος ${size} προστέθηκε στο καλάθι.`);
+            }
+        });
+
+        document.getElementById("addToFavorites").addEventListener("click", function() {
+            alert("Το προϊόν προστέθηκε στα αγαπημένα.");
+        });
+    </script>
+</body>
+</html>
     
        
    
