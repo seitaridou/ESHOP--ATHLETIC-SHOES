@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ESHOP--ATHLETIC--SHOES</title>
+    <script>
+      alert("Καλώς ήρθατε!");
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
