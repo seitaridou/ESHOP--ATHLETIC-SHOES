@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(8, 7, 7);
+}
+
+#object {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+} 
+.three-scene-wrapper {
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100; /* make sure it's above other content */
+    pointer-events: none; /* optional - prevents it from blocking clicks */
+  }
+  
+header nav {
+    color: white;
+    position: absolute;
+    top: 0%;
+    left: 50%; /* Move the nav 50% from the left */
+    transform: translateX(-50%); /* Adjust the element to the left by 50% of its width */
+    width: 50%; /* Keep the width as is */
+}
+
+nav {
+    position: fixed;
+    top: 0;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 0 0 12px 12px; /* Top-left and top-right are sharp (0), bottom-left and bottom-right are rounded (15px) */
+    background-color: gray;
+}
+
+.nav-links a {
+    color: white;
+    border-bottom: none; /* Remove bottom border */
+    text-decoration: none; /* Remove the underline from the links */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.header {
+    width: 100%;
+}
+
+.hero-text {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    z-index: 1000;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+main {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.glass-box-1 {
+z-index: 1;
+background: white;
+min-height: 80vh;
+width: 60%;
+background: linear-gradient(to bottom,
+ rgba(255,255,255,0.7),
+ rgba(255,255,255,0.2)
+);
+border-radius: 2rem;
+backdrop-filter: blur(1rem);
+}
+
+.white-box-1 {
+    background: white;
+    background: linear-gradient(to right bottom,
+ rgba(255,255,255,0.8),
+ rgba(255,255,255,0.2)
+);
+border-radius: 0.5rem;
+    min-height: 60%;
+    width: 70%;
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.big-text {
+    z-index: 2;
+    opacity: 0.28;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 8rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    text-align: justify;
+    white-space: nowrap;       /* 💡 Keep it on one line */
+
+}
+#right-box {
+    margin-right: 10vw;
+    float: right;
+    height: fit-content;
+    width: 40vw;
+    background: white;
+    background: linear-gradient(to right bottom,
+ rgba(255,255,255,0.9),
+ rgba(255,255,255,0.1)
+    );
+border-radius: 1rem;
+
+}
+
+#left-box {
+    margin-left: 10vw;
+    float: left;
+    height: fit-content;
+    width: 40vw;
+    background: white;
+    background: linear-gradient(to left bottom,
+ rgba(255,255,255,0.9),
+ rgba(255,255,255,0.1)
+    );
+border-radius: 1rem;
+
+}
+
+.circle1 {
+    top: 5%;
+    left: 75%;
+    position: absolute;
+    background: white;
+    background: linear-gradient(to left bottom,
+ rgba(255,255,255,0.9),
+ rgba(255,255,255,0.1)
+    );
+    height: 20rem;
+    width: 20rem;
+    z-index: 0;
+    border-radius: 50%;
+    backdrop-filter: blur(1rem);
+
+}
+
+.circle2 {
+    bottom: 5%;
+    left: 15%;
+
+    position: absolute;
+    background: white;
+    background: linear-gradient(to left bottom,
+ rgba(255,255,255,0.9),
+ rgba(255,255,255,0.1)
+    );
+    height: 20rem;
+    width: 20rem;
+    z-index: 1;
+    border-radius: 50%;
+    backdrop-filter: blur(1rem);
+
+}
+
+
+
+
+
+
+
+
+/* Typography and spacing */
+.small-title {
+    font-size: 1rem;
+    color: #888;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #222;
+    text-align: center;
+}
+
+.code {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.price {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #3ebe74;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.description-label {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    padding-left: 10px;
+    color: #333;
+}
+
+.description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 1rem;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    height: fit-content;
+
+}
+.card-container {
+    background-color: rgba(255, 255, 255, 0.745);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 0.6rem;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+    height: fit-content;
+
+}
